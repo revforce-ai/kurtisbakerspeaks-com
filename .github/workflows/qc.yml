@@ -1,0 +1,31 @@
+name: QC — Link & Site Health
+
+# Periodic quality-control: verifies every internal link and booking shortcut
+# still resolves. Runs on a weekly schedule, on every push to main, and on demand.
+# Fails (and notifies via GitHub) if any internal link or shortcut breaks.
+
+on:
+  schedule:
+    # Mondays at 13:25 UTC (~8–9am ET)
+    - cron: "25 13 * * 1"
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: "Base URL to check"
+        required: false
+        default: "https://kurtisbakerspeaks.com"
+
+jobs:
+  qc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Run QC link check
+        env:
+          QC_BASE_URL: ${{ github.event.inputs.base_url || 'https://kurtisbakerspeaks.com' }}
+        run: node scripts/qc-links.mjs
