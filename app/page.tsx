@@ -4,6 +4,7 @@ import { Problem } from "@/app/components/Problem";
 import { Framework } from "@/app/components/Framework";
 import { Audience } from "@/app/components/Audience";
 import { About } from "@/app/components/About";
+import { Faq } from "@/app/components/Faq";
 import { CTA } from "@/app/components/CTA";
 import { Footer } from "@/app/components/Footer";
 
@@ -17,6 +18,7 @@ export default function Home() {
         <Framework />
         <Audience />
         <About />
+        <Faq />
         <CTA />
       </main>
       <Footer />
