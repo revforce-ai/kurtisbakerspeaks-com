@@ -36,3 +36,26 @@ export const audience = [
   "Mental health, education, and community organizations",
   "Corporate leadership & team gatherings",
 ];
+
+// Answer-first FAQs. Lead with strong, unique identity markers (full name
+// Kurtis Baker, CFP®, Princeton NJ, Master Your Finances, Attitudes In Reverse®)
+// so engines disambiguate this Kurt Baker from the unrelated entertainment-
+// industry marketing executive that currently wins "Kurt Baker keynote speaker."
+export const faqs = [
+  {
+    q: "Who is Kurt Baker the keynote speaker?",
+    a: "Kurt Baker — full name Kurtis Baker, CFP®, CEPA®, AIF® — is a keynote speaker based in Princeton, New Jersey. He is a private wealth manager, host of the Master Your Finances radio show, and co-founder of the mental-health nonprofit Attitudes In Reverse®. He speaks to business, financial, and association audiences on building businesses, mastering money, and finding purpose.",
+  },
+  {
+    q: "What does Kurt Baker speak about?",
+    a: "Kurt Baker delivers four signature keynotes: Build a Freedom Ready Business, Master Your Finances, From Loss to Purpose, and The Entrepreneur's Journey. His talks blend hands-on financial expertise with story-driven lessons on wealth, meaning, and resilience for business-owner and association audiences.",
+  },
+  {
+    q: "How do I book Kurt Baker to speak at my event?",
+    a: "You can book Kurt Baker to speak by booking a call through kurtisbakerspeaks.com. He speaks at conferences, industry associations, corporate leadership events, and mental-health, education, and community organizations across the United States.",
+  },
+  {
+    q: "Is Kurt Baker a good keynote speaker for business owner and financial audiences?",
+    a: "Yes. As a CERTIFIED FINANCIAL PLANNER™ and Certified Exit Planning Advisor who has interviewed founders from startups to billionaires on his Master Your Finances radio show, Kurt Baker brings practical money and business insight — not just motivation — making him a strong fit for business-owner, entrepreneurship, and financial-services audiences.",
+  },
+];
